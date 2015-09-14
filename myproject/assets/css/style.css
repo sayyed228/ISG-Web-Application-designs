@@ -1,0 +1,189 @@
+/*$features-layout: vertical;*/
+/*
+$features-spacing: 40px;
+$features-chat-spacing: 60px;
+@import "features/*.png";
+@include all-features-sprites;*/
+/* line 24, ../../scss/style.scss */
+body {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+/* line 30, ../../scss/style.scss */
+.btn, .form-control {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; }
+
+/* line 32, ../../scss/style.scss */
+.form-control {
+  padding: 20px 10px; }
+
+/* line 34, ../../scss/style.scss */
+.btn-primary {
+  color: #fff;
+  background-color: #0f3153;
+  border-color: #0f3153; }
+
+/* line 38, ../../scss/style.scss */
+header .top {
+  color: #fff;
+  background: url(../images/trans-bg.png);
+  padding: 20px 10px 10px 10px; }
+/* line 39, ../../scss/style.scss */
+header .logo {
+  margin-top: 30px; }
+@media (max-width: 767px) {
+  /* line 42, ../../scss/style.scss */
+  header .col-sm-4 {
+    text-align: center; }
+  /* line 43, ../../scss/style.scss */
+  header .logo {
+    margin-bottom: 20px; } }
+
+/* line 50, ../../scss/style.scss */
+.loginbox {
+  border: #ccc solid 1px;
+  width: 300px;
+  margin: 0 auto;
+  background: url(../images/trans-bg-white.png);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -130px; }
+  /* line 53, ../../scss/style.scss */
+  .loginbox h2 {
+    background: url(../images/trans-bg-white-dark.png);
+    margin-top: 0;
+    padding: 10px;
+    font-size: 1.6em;
+    text-align: center;
+    color: #444444; }
+  /* line 54, ../../scss/style.scss */
+  .loginbox label {
+    color: #444444; }
+  /* line 55, ../../scss/style.scss */
+  .loginbox .box {
+    padding: 0px 20px 20px 20px; }
+  /* line 56, ../../scss/style.scss */
+  .loginbox .btn-primary {
+    font-size: 16px;
+    margin-top: 25px;
+    line-height: 25px; }
+
+/* line 62, ../../scss/style.scss */
+.landingbox {
+  border: red solid 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 180px;
+  margin-left: -200px;
+  margin-top: -90px; }
+  @media (max-width: 767px) {
+    /* line 62, ../../scss/style.scss */
+    .landingbox {
+      position: relative;
+      width: 200px;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      margin-top: 0px; } }
+  /* line 68, ../../scss/style.scss */
+  .landingbox .box {
+    float: left;
+    height: 150px;
+    width: 150px;
+    border: #fff solid 1px;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    border-radius: 75px;
+    margin-left: 45px; }
+    @media (max-width: 767px) {
+      /* line 68, ../../scss/style.scss */
+      .landingbox .box {
+        float: none;
+        margin-bottom: 70px; } }
+    /* line 76, ../../scss/style.scss */
+    .landingbox .box:hover {
+      background: #0f3153;
+      border: #0f3153 solid 1px;
+      cursor: pointer; }
+  /* line 81, ../../scss/style.scss */
+  .landingbox .box1 img {
+    margin-top: 50px;
+    margin-left: 30px; }
+  /* line 82, ../../scss/style.scss */
+  .landingbox .box1 p {
+    color: #fff;
+    text-align: center;
+    margin-top: 55px;
+    font-size: 1.8em; }
+  /* line 86, ../../scss/style.scss */
+  .landingbox .box2 img {
+    margin-top: 40px;
+    margin-left: 30px; }
+  /* line 87, ../../scss/style.scss */
+  .landingbox .box2 p {
+    color: #fff;
+    text-align: center;
+    margin-top: 45px;
+    font-size: 1.8em; }
+
+/* line 96, ../../scss/style.scss */
+.isgtabwrap {
+  padding-top: 20px;
+  padding-bottom: 40px; }
+  /* line 98, ../../scss/style.scss */
+  .isgtabwrap .row {
+    margin-top: 25px; }
+  /* line 99, ../../scss/style.scss */
+  .isgtabwrap .form-control {
+    background: url(../images/input-bg.png);
+    padding: 22px 15px; }
+  /* line 101, ../../scss/style.scss */
+  .isgtabwrap ::-webkit-input-placeholder {
+    color: #000;
+    font-style: italic; }
+  /* line 102, ../../scss/style.scss */
+  .isgtabwrap :-moz-placeholder {
+    /* Firefox 18- */
+    color: #000;
+    font-style: italic; }
+  /* line 103, ../../scss/style.scss */
+  .isgtabwrap ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #000;
+    font-style: italic; }
+  /* line 104, ../../scss/style.scss */
+  .isgtabwrap :-ms-input-placeholder {
+    color: #000;
+    font-style: italic; }
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  /* line 119, ../../scss/style.scss */
+  .HideOnDesktop {
+    display: none !important; } }
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 124, ../../scss/style.scss */
+  .HideOnTablate {
+    display: none !important; } }
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* line 129, ../../scss/style.scss */
+  .HideOnTablate {
+    display: none !important; } }
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 134, ../../scss/style.scss */
+  .HideOnMobile {
+    display: none !important; } }
