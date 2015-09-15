@@ -40,14 +40,35 @@ header .top {
   /* line 28, ../../scss/partial/_reset.scss */
   header .top a {
     color: #fff; }
-/* line 32, ../../scss/partial/_reset.scss */
+  /* line 31, ../../scss/partial/_reset.scss */
+  header .top .btn-group > .btn-group {
+    float: right; }
+  /* line 34, ../../scss/partial/_reset.scss */
+  header .top .dropdown-menu {
+    background: url(../images/trans-bg-white-dark.png);
+    border: 1px solid #444444;
+    padding: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin-top: 20px;
+    margin-left: -93px; }
+    /* line 42, ../../scss/partial/_reset.scss */
+    header .top .dropdown-menu li a {
+      color: #444444;
+      padding: 10px 10px; }
+      /* line 45, ../../scss/partial/_reset.scss */
+      header .top .dropdown-menu li a:hover {
+        background: url(../images/trans-bg-white.png);
+        color: #444444; }
+/* line 53, ../../scss/partial/_reset.scss */
 header .logo {
   margin-top: 30px; }
 @media (max-width: 767px) {
-  /* line 36, ../../scss/partial/_reset.scss */
+  /* line 57, ../../scss/partial/_reset.scss */
   header .col-sm-4 {
     text-align: center; }
-  /* line 39, ../../scss/partial/_reset.scss */
+  /* line 60, ../../scss/partial/_reset.scss */
   header .logo {
     margin-bottom: 20px; } }
 
@@ -91,7 +112,7 @@ header .logo {
   width: 400px;
   height: 180px;
   margin-left: -200px;
-  margin-top: -90px; }
+  margin-top: -150px; }
   @media (max-width: 767px) {
     /* line 1, ../../scss/partial/_landing.scss */
     .landingbox {
@@ -101,7 +122,7 @@ header .logo {
       left: 0;
       margin: 0 auto;
       margin-top: 0px; } }
-  /* line 18, ../../scss/partial/_landing.scss */
+  /* line 21, ../../scss/partial/_landing.scss */
   .landingbox .box {
     float: left;
     height: 150px;
@@ -112,39 +133,85 @@ header .logo {
     border-radius: 75px;
     margin-left: 45px; }
     @media (max-width: 767px) {
-      /* line 18, ../../scss/partial/_landing.scss */
+      /* line 21, ../../scss/partial/_landing.scss */
       .landingbox .box {
         float: none;
         margin-bottom: 70px; } }
-    /* line 29, ../../scss/partial/_landing.scss */
+    /* line 32, ../../scss/partial/_landing.scss */
     .landingbox .box:hover {
       background: #0f3153;
       border: #0f3153 solid 1px;
       cursor: pointer; }
-  /* line 36, ../../scss/partial/_landing.scss */
+  /* line 39, ../../scss/partial/_landing.scss */
   .landingbox .box1 img {
     margin-top: 50px;
     margin-left: 30px; }
-  /* line 40, ../../scss/partial/_landing.scss */
+  /* line 43, ../../scss/partial/_landing.scss */
   .landingbox .box1 p {
     color: #fff;
     text-align: center;
     margin-top: 55px;
     font-size: 1.8em; }
-  /* line 48, ../../scss/partial/_landing.scss */
+  /* line 51, ../../scss/partial/_landing.scss */
   .landingbox .box2 img {
     margin-top: 40px;
     margin-left: 30px; }
-  /* line 52, ../../scss/partial/_landing.scss */
+  /* line 55, ../../scss/partial/_landing.scss */
   .landingbox .box2 p {
     color: #fff;
     text-align: center;
     margin-top: 45px;
     font-size: 1.8em; }
+  /* line 64, ../../scss/partial/_landing.scss */
+  .landingbox .submissionId {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: none; }
+    /* line 66, ../../scss/partial/_landing.scss */
+    .landingbox .submissionId .panel {
+      background-color: transparent;
+      border: 1px solid #fff;
+      border-radius: 0px; }
+    /* line 67, ../../scss/partial/_landing.scss */
+    .landingbox .submissionId .panel-heading {
+      font-size: 16px; }
+    /* line 69, ../../scss/partial/_landing.scss */
+    .landingbox .submissionId ::-webkit-input-placeholder {
+      color: #fff;
+      font-style: italic; }
+    /* line 73, ../../scss/partial/_landing.scss */
+    .landingbox .submissionId :-moz-placeholder {
+      /* Firefox 18- */
+      color: #fff;
+      font-style: italic; }
+    /* line 78, ../../scss/partial/_landing.scss */
+    .landingbox .submissionId ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #fff;
+      font-style: italic; }
+    /* line 83, ../../scss/partial/_landing.scss */
+    .landingbox .submissionId :-ms-input-placeholder {
+      color: #fff;
+      font-style: italic; }
+    /* line 88, ../../scss/partial/_landing.scss */
+    .landingbox .submissionId input-group-addon, .landingbox .submissionId .input-group-btn {
+      width: 0%; }
+    /* line 92, ../../scss/partial/_landing.scss */
+    .landingbox .submissionId .btn-default {
+      padding: 9px 15px;
+      font-size: 16px; }
+    /* line 93, ../../scss/partial/_landing.scss */
+    .landingbox .submissionId .form1 {
+      background: transparent;
+      color: #fff;
+      border: #fff solid 1px;
+      padding: 10px;
+      width: 235px; }
 
 /* line 6, ../../scss/style.scss */
 .isgtabwrap {
-  padding: 0px 20px 20px 20px; }
+  padding: 0px 20px 40px 20px; }
   /* line 8, ../../scss/style.scss */
   .isgtabwrap .form-control {
     margin-bottom: 25px; }
@@ -234,24 +301,31 @@ header .logo {
   padding-left: 0;
   padding-right: 0;
   margin-top: -7px; }
+  /* line 94, ../../scss/style.scss */
+  .tabContainer .btn-default {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: url(../images/input-bg.png);
+    border: #444444 solid 1px; }
 
 /* Large desktop */
 @media (min-width: 1200px) {
-  /* line 100, ../../scss/style.scss */
+  /* line 101, ../../scss/style.scss */
   .HideOnDesktop {
     display: none !important; } }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 109, ../../scss/style.scss */
+  /* line 110, ../../scss/style.scss */
   .HideOnTablate {
     display: none !important; } }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 118, ../../scss/style.scss */
+  /* line 119, ../../scss/style.scss */
   .HideOnTablate {
     display: none !important; } }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  /* line 127, ../../scss/style.scss */
+  /* line 128, ../../scss/style.scss */
   .HideOnMobile {
     display: none !important; } }

@@ -4,7 +4,7 @@
 @import "partial/_login.scss";
 @import "partial/_landing.scss";
 .isgtabwrap {
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 40px 20px;
     .form-control {
         margin-bottom: 25px;
     }
@@ -91,6 +91,7 @@
     padding-left: 0;
     padding-right: 0;
     margin-top: -7px;
+	.btn-default {@include border-radius(10px); background:url(../images/input-bg.png); border:$accent-4 solid 1px;}
 }
 
 

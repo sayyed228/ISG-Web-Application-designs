@@ -28,6 +28,27 @@ header {
         a {
             color: $accent-1
         }
+        .btn-group>.btn-group {
+            float: right;
+        }
+        .dropdown-menu {
+            background: url(../images/trans-bg-white-dark.png);
+            border: 1px solid $accent-4;
+            padding: 0;
+            @include border-radius(0);
+            margin-top: 20px;
+            margin-left: -93px;
+            li {
+                a {
+                    color: $accent-4;
+                    padding: 10px 10px;
+                    &:hover {
+                        background: url(../images/trans-bg-white.png);
+                        color: $accent-4
+                    }
+                }
+            }
+        }
     }
     .logo {
         margin-top: 30px;
