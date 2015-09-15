@@ -3,8 +3,9 @@
 $features-spacing: 40px;
 $features-chat-spacing: 60px;
 @import "features/*.png";
-@include all-features-sprites;*/
-/* line 24, ../../scss/style.scss */
+@include all-features-sprites;
+*/
+/* line 1, ../../scss/partial/_reset.scss */
 body {
   background: url(../images/bg.jpg) no-repeat center center fixed;
   -moz-background-size: cover;
@@ -14,39 +15,43 @@ body {
   width: 100%;
   height: 100%; }
 
-/* line 30, ../../scss/style.scss */
-.btn, .form-control {
+/* line 8, ../../scss/partial/_reset.scss */
+.btn,
+.form-control {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px; }
 
-/* line 32, ../../scss/style.scss */
+/* line 13, ../../scss/partial/_reset.scss */
 .form-control {
   padding: 20px 10px; }
 
-/* line 34, ../../scss/style.scss */
+/* line 17, ../../scss/partial/_reset.scss */
 .btn-primary {
   color: #fff;
   background-color: #0f3153;
   border-color: #0f3153; }
 
-/* line 38, ../../scss/style.scss */
+/* line 24, ../../scss/partial/_reset.scss */
 header .top {
   color: #fff;
   background: url(../images/trans-bg.png);
   padding: 20px 10px 10px 10px; }
-/* line 39, ../../scss/style.scss */
+  /* line 28, ../../scss/partial/_reset.scss */
+  header .top a {
+    color: #fff; }
+/* line 32, ../../scss/partial/_reset.scss */
 header .logo {
   margin-top: 30px; }
 @media (max-width: 767px) {
-  /* line 42, ../../scss/style.scss */
+  /* line 36, ../../scss/partial/_reset.scss */
   header .col-sm-4 {
     text-align: center; }
-  /* line 43, ../../scss/style.scss */
+  /* line 39, ../../scss/partial/_reset.scss */
   header .logo {
     margin-bottom: 20px; } }
 
-/* line 50, ../../scss/style.scss */
+/* line 1, ../../scss/partial/_login.scss */
 .loginbox {
   border: #ccc solid 1px;
   width: 300px;
@@ -57,7 +62,7 @@ header .logo {
   top: 50%;
   margin-left: -150px;
   margin-top: -130px; }
-  /* line 53, ../../scss/style.scss */
+  /* line 11, ../../scss/partial/_login.scss */
   .loginbox h2 {
     background: url(../images/trans-bg-white-dark.png);
     margin-top: 0;
@@ -65,19 +70,19 @@ header .logo {
     font-size: 1.6em;
     text-align: center;
     color: #444444; }
-  /* line 54, ../../scss/style.scss */
+  /* line 19, ../../scss/partial/_login.scss */
   .loginbox label {
     color: #444444; }
-  /* line 55, ../../scss/style.scss */
+  /* line 22, ../../scss/partial/_login.scss */
   .loginbox .box {
     padding: 0px 20px 20px 20px; }
-  /* line 56, ../../scss/style.scss */
+  /* line 25, ../../scss/partial/_login.scss */
   .loginbox .btn-primary {
     font-size: 16px;
     margin-top: 25px;
     line-height: 25px; }
 
-/* line 62, ../../scss/style.scss */
+/* line 1, ../../scss/partial/_landing.scss */
 .landingbox {
   border: red solid 0px;
   position: absolute;
@@ -88,7 +93,7 @@ header .logo {
   margin-left: -200px;
   margin-top: -90px; }
   @media (max-width: 767px) {
-    /* line 62, ../../scss/style.scss */
+    /* line 1, ../../scss/partial/_landing.scss */
     .landingbox {
       position: relative;
       width: 200px;
@@ -96,7 +101,7 @@ header .logo {
       left: 0;
       margin: 0 auto;
       margin-top: 0px; } }
-  /* line 68, ../../scss/style.scss */
+  /* line 18, ../../scss/partial/_landing.scss */
   .landingbox .box {
     float: left;
     height: 150px;
@@ -107,83 +112,146 @@ header .logo {
     border-radius: 75px;
     margin-left: 45px; }
     @media (max-width: 767px) {
-      /* line 68, ../../scss/style.scss */
+      /* line 18, ../../scss/partial/_landing.scss */
       .landingbox .box {
         float: none;
         margin-bottom: 70px; } }
-    /* line 76, ../../scss/style.scss */
+    /* line 29, ../../scss/partial/_landing.scss */
     .landingbox .box:hover {
       background: #0f3153;
       border: #0f3153 solid 1px;
       cursor: pointer; }
-  /* line 81, ../../scss/style.scss */
+  /* line 36, ../../scss/partial/_landing.scss */
   .landingbox .box1 img {
     margin-top: 50px;
     margin-left: 30px; }
-  /* line 82, ../../scss/style.scss */
+  /* line 40, ../../scss/partial/_landing.scss */
   .landingbox .box1 p {
     color: #fff;
     text-align: center;
     margin-top: 55px;
     font-size: 1.8em; }
-  /* line 86, ../../scss/style.scss */
+  /* line 48, ../../scss/partial/_landing.scss */
   .landingbox .box2 img {
     margin-top: 40px;
     margin-left: 30px; }
-  /* line 87, ../../scss/style.scss */
+  /* line 52, ../../scss/partial/_landing.scss */
   .landingbox .box2 p {
     color: #fff;
     text-align: center;
     margin-top: 45px;
     font-size: 1.8em; }
 
-/* line 96, ../../scss/style.scss */
+/* line 6, ../../scss/style.scss */
 .isgtabwrap {
-  padding-top: 20px;
-  padding-bottom: 40px; }
-  /* line 98, ../../scss/style.scss */
+  padding: 0px 20px 20px 20px; }
+  /* line 8, ../../scss/style.scss */
+  .isgtabwrap .form-control {
+    margin-bottom: 25px; }
+  /* line 11, ../../scss/style.scss */
   .isgtabwrap .row {
     margin-top: 25px; }
-  /* line 99, ../../scss/style.scss */
+  /* line 14, ../../scss/style.scss */
   .isgtabwrap .form-control {
-    background: url(../images/input-bg.png);
+    background: url(../images/trans-bg-white-dark.png);
     padding: 22px 15px; }
-  /* line 101, ../../scss/style.scss */
+  /* line 18, ../../scss/style.scss */
   .isgtabwrap ::-webkit-input-placeholder {
     color: #000;
     font-style: italic; }
-  /* line 102, ../../scss/style.scss */
+  /* line 22, ../../scss/style.scss */
   .isgtabwrap :-moz-placeholder {
     /* Firefox 18- */
     color: #000;
     font-style: italic; }
-  /* line 103, ../../scss/style.scss */
+  /* line 27, ../../scss/style.scss */
   .isgtabwrap ::-moz-placeholder {
     /* Firefox 19+ */
     color: #000;
     font-style: italic; }
-  /* line 104, ../../scss/style.scss */
+  /* line 32, ../../scss/style.scss */
   .isgtabwrap :-ms-input-placeholder {
     color: #000;
     font-style: italic; }
 
+/* line 38, ../../scss/style.scss */
+.ISG-Tabs {
+  background: url(../images/trans-bg-white-dark.png);
+  border-bottom: 0px solid #ddd;
+  margin-bottom: 0px; }
+  @media (min-width: 768px) and (max-width: 979px) {
+    /* line 38, ../../scss/style.scss */
+    .ISG-Tabs {
+      display: inline-block; } }
+  @media (max-width: 767px) {
+    /* line 38, ../../scss/style.scss */
+    .ISG-Tabs {
+      display: inline-block; } }
+  /* line 48, ../../scss/style.scss */
+  .ISG-Tabs li {
+    margin-bottom: 0px; }
+    /* line 51, ../../scss/style.scss */
+    .ISG-Tabs li a {
+      padding: 10px 25px;
+      color: #373737;
+      font-size: 1.2em; }
+      @media (max-width: 767px) {
+        /* line 51, ../../scss/style.scss */
+        .ISG-Tabs li a {
+          padding: 10px 13px; } }
+      @media (max-width: 480px) {
+        /* line 51, ../../scss/style.scss */
+        .ISG-Tabs li a {
+          padding: 10px 7px; } }
+
+/* line 67, ../../scss/style.scss */
+.ISG-Tabs > li.active > a,
+.ISG-Tabs > li.active > a:focus,
+.ISG-Tabs > li.active > a:hover {
+  color: #fff;
+  cursor: default;
+  background-color: #0f3153;
+  border: 1px solid #0f3153;
+  border-bottom-color: transparent;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; }
+
+/* line 78, ../../scss/style.scss */
+.ISG-Tabs li a .active,
+.ISG-Tabs li a .active-first {
+  display: none; }
+
+/* line 83, ../../scss/style.scss */
+.tab-nav {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 30px; }
+
+/* line 89, ../../scss/style.scss */
+.tabContainer {
+  background: url(../images/trans-bg-white.png);
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: -7px; }
+
 /* Large desktop */
 @media (min-width: 1200px) {
-  /* line 119, ../../scss/style.scss */
+  /* line 100, ../../scss/style.scss */
   .HideOnDesktop {
     display: none !important; } }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 124, ../../scss/style.scss */
+  /* line 109, ../../scss/style.scss */
   .HideOnTablate {
     display: none !important; } }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 129, ../../scss/style.scss */
+  /* line 118, ../../scss/style.scss */
   .HideOnTablate {
     display: none !important; } }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  /* line 134, ../../scss/style.scss */
+  /* line 127, ../../scss/style.scss */
   .HideOnMobile {
     display: none !important; } }

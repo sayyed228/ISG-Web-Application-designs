@@ -4,7 +4,7 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <meta content="IE=edge" http-equiv="X-UA-Compatible" />
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-<title>ISG Landing</title>
+<title>ISG Insured Information</title>
 <meta content="" name="description" />
 <meta content="" name="keywords" />
 <link href="vendor/css/bootstrap.min.css" rel="stylesheet" />
@@ -31,7 +31,7 @@
           <p class="text-center">Welcome : Charles L. Dobson</p>
         </div>
         <div class="text-right col-sm-4">
-          <p class="">New Quote  |  Retrieve Quote  |  Logout</p>
+          <p class=""><a href="#">New Quote</a>  |  <a href="#">Retrieve Quote</a>  |  <a href="#">Logout</a></p>
         </div>
       </div>
     </div>
@@ -43,87 +43,72 @@
     </div>
   </div>
 </header>
-
-<div class="container" style="background:url(assets/images/trans-bg-white.png)">
- <div class="row">
- <div class="col-sm-12">
+<div class="container tab-nav">
+  <ul id="myTabs" class="nav nav-tabs ISG-Tabs" role="tablist">
+    <li role="presentation" class="active"> <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"> <img src="assets/images/Insured-Information.png" class="normal  active-first" alt=""/><img src="assets/images/Insured-Information-active.png" class="active" alt=""/>&nbsp;<span class="hidden-xs hidden-sm hidden-md">Insured Information</span></a> </li>
+    <li role="presentation"> <a href="#RiskInformation" role="tab"  data-toggle="tab" aria-controls="RiskInformation"> <img src="assets/images/Risk-Information.png"  class="normal" alt=""/><img src="assets/images/Risk-Information-active.png"  class="active" alt=""/><span class="hidden-xs hidden-sm hidden-md">&nbsp;Risk Information</span></a></li>
+    <li role="presentation"><a href="#CoverageInformation" role="tab"  data-toggle="tab" aria-controls="Coverage-Information"> <img src="assets/images/Coverage-Information.png" class="normal" alt=""/><img src="assets/images/Coverage-Information-active.png" class="active" alt=""/><span class="hidden-xs hidden-sm hidden-md">&nbsp;Coverage Information</span></a></li>
+    <li role="presentation"><a href="#Reporting" role="tab"  data-toggle="tab" aria-controls="Coverage-Information"> <img src="assets/images/Reporting.png" class="normal" alt=""/><img src="assets/images/Reporting-active.png" class="active" alt=""/><span class="hidden-xs hidden-sm hidden-md">&nbsp;Reporting</span></a></li>
+    <li role="presentation"><a href="#RateandPremium" role="tab"  data-toggle="tab" aria-controls="Rate-and-Premium"> <img src="assets/images/Rate-and-Premium.png" class="normal" alt=""/><img src="assets/images/Rate-and-Premium-active.png" class="active" alt=""/><span class="hidden-xs hidden-sm hidden-md">&nbsp;Rate and Premium</span></a></li>
+  </ul>
+</div>
+<div class="container tabContainer">
   <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
-    <ul id="myTabs" class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active">
-       <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Insured Information</a>
-      </li>
-      <li role="presentation"><a href="#RiskInformation" role="tab"  data-toggle="tab" aria-controls="RiskInformation">Risk Information</a></li>
-      <li role="presentation"><a href="#CoverageInformation" role="tab"  data-toggle="tab" aria-controls="Coverage-Information">Coverage Information</a></li>
-      <li role="presentation"><a href="#Reporting" role="tab"  data-toggle="tab" aria-controls="Coverage-Information">Reporting</a></li>
-      <li role="presentation"><a href="#RateandPremium" role="tab"  data-toggle="tab" aria-controls="Rate-and-Premium">Rate and Premium</a></li>
-      <!--<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Coverage Information</a></li>
-      <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Reporting</a></li>
-      <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Rate and Premium</a></li>-->
-    </ul>
     <div id="myTabContent" class="tab-content isgtabwrap">
       <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
-         <div class="row">
-          <div class="col-sm-3">
-            <label for="exampleInputEmail1">Email address</label>
+        <div class="row">
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Name Insured</label>
+            <input type="email" class="form-control"  placeholder="Name Insured">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Insured Information</label>
+            <input type="email" class="form-control"  placeholder="Insured Information">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Mailing Zip Address</label>
+            <input type="email" class="form-control"  placeholder="Mailing Zip Address">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Mailing Street Address</label>
             <input type="email" class="form-control"  placeholder="Email">
           </div>
-          <div class="col-sm-3">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control"  placeholder="Email">
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Mailing State Address</label>
+            <input type="email" class="form-control"  placeholder="Mailing State Address">
           </div>
-          <div class="col-sm-3">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control"  placeholder="Email">
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Mailing City Address</label>
+            <input type="email" class="form-control"  placeholder="Mailing City Address">
           </div>
-          <div class="col-sm-3">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control"  placeholder="Email">
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Insured Contractor License </label>
+            <input type="email" class="form-control"  placeholder="Insured Contractor License ">
           </div>
-         </div> 
-         <div class="row">
-          <div class="col-sm-3">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control"  placeholder="Email">
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Form of Business</label>
+            <input type="email" class="form-control"  placeholder="Form of Business">
           </div>
-          <div class="col-sm-3">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control"  placeholder="Email">
-          </div>
-          <div class="col-sm-3">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control"  placeholder="Email">
-          </div>
-          <div class="col-sm-3">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control"  placeholder="Email">
-          </div>
-         </div> 
-
-        
+        </div>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="RiskInformation" aria-labelledby="RiskInformation-tab">
         <h2>Risk Information</h2>
         <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
       </div>
-      
       <div role="tabpanel" class="tab-pane fade" id="CoverageInformation" aria-labelledby="Coverage-Information-tab">
         <h2>Coverage Information</h2>
         <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
       </div>
-      
-         <div role="tabpanel" class="tab-pane fade" id="Reporting" aria-labelledby="Reporting-tab">
+      <div role="tabpanel" class="tab-pane fade" id="Reporting" aria-labelledby="Reporting-tab">
         <h2>Reporting</h2>
         <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
       </div>
-  <div role="tabpanel" class="tab-pane fade" id="RateandPremium" aria-labelledby="Rate-and-Premium-tab">
+      <div role="tabpanel" class="tab-pane fade" id="RateandPremium" aria-labelledby="Rate-and-Premium-tab">
         <h2>Rate and Premium</h2>
         <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
       </div>
-
     </div>
   </div>
- </div>
- </div>
 </div>
 
 <!-- --> 

@@ -1,0 +1,30 @@
+	 .loginbox {
+	     border: $accent-3 solid 1px;
+	     width: 300px;
+	     margin: 0 auto;
+	     background: url(../images/trans-bg-white.png);
+	     position: absolute;
+	     left: 50%;
+	     top: 50%;
+	     margin-left: -150px;
+	     margin-top: -130px;
+	     h2 {
+	         background: url(../images/trans-bg-white-dark.png);
+	         margin-top: 0;
+	         padding: 10px;
+	         font-size: $font-size-large;
+	         text-align: center;
+	         color: $accent-4;
+	     }
+	     label {
+	         color: $accent-4;
+	     }
+	     .box {
+	         padding: 0px 20px 20px 20px;
+	     }
+	     .btn-primary {
+	         font-size: 16px;
+	         margin-top: 25px;
+	         line-height: 25px
+	     }
+	 }

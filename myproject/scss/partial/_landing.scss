@@ -1,0 +1,59 @@
+.landingbox {
+    border: red solid 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 180px;
+    margin-left: -200px;
+    margin-top: -90px;
+    @media (max-width: 767px) {
+        position: relative;
+        width: 200px;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+    .box {
+        float: left;
+        height: 150px;
+        width: 150px;
+        border: $accent-1 solid 1px;
+        @include border-radius(75px);
+        margin-left: 45px;
+        @media (max-width: 767px) {
+            float: none;
+            margin-bottom: 70px;
+        }
+        &:hover {
+            background: $color-primary;
+            border: $color-primary solid 1px;
+            cursor: pointer
+        }
+    }
+    .box1 {
+        img {
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+        p {
+            color: $accent-1;
+            text-align: center;
+            margin-top: 55px;
+            font-size: $font-size-x-large;
+        }
+    }
+    .box2 {
+        img {
+            margin-top: 40px;
+            margin-left: 30px;
+        }
+        p {
+            color: $accent-1;
+            text-align: center;
+            margin-top: 45px;
+            font-size: $font-size-x-large;
+        }
+    }
+}
