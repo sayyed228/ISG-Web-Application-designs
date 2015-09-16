@@ -87,20 +87,27 @@ header .logo {
   .loginbox h2 {
     background: url(../images/trans-bg-white-dark.png);
     margin-top: 0;
-    padding: 10px;
-    font-size: 1.6em;
+    padding: 15px 10px;
+    font-size: 1.3em;
     text-align: center;
     color: #444444; }
   /* line 19, ../../scss/partial/_login.scss */
   .loginbox label {
     color: #444444; }
   /* line 22, ../../scss/partial/_login.scss */
+  .loginbox p {
+    margin: 0 0 0 0;
+    font-size: 1.1em; }
+  /* line 23, ../../scss/partial/_login.scss */
+  .loginbox a {
+    color: #0f3153; }
+  /* line 24, ../../scss/partial/_login.scss */
   .loginbox .box {
     padding: 0px 20px 20px 20px; }
-  /* line 25, ../../scss/partial/_login.scss */
+  /* line 27, ../../scss/partial/_login.scss */
   .loginbox .btn-primary {
     font-size: 16px;
-    margin-top: 25px;
+    margin-top: 10px;
     line-height: 25px; }
 
 /* line 1, ../../scss/partial/_landing.scss */
@@ -142,66 +149,87 @@ header .logo {
       background: #0f3153;
       border: #0f3153 solid 1px;
       cursor: pointer; }
-  /* line 39, ../../scss/partial/_landing.scss */
+  /* line 41, ../../scss/partial/_landing.scss */
+  .landingbox .activebox {
+    background: #0f3153;
+    border: #0f3153 solid 1px;
+    cursor: pointer; }
+  /* line 48, ../../scss/partial/_landing.scss */
   .landingbox .box1 img {
     margin-top: 50px;
     margin-left: 30px; }
-  /* line 43, ../../scss/partial/_landing.scss */
+  /* line 52, ../../scss/partial/_landing.scss */
   .landingbox .box1 p {
     color: #fff;
     text-align: center;
     margin-top: 55px;
     font-size: 1.8em; }
-  /* line 51, ../../scss/partial/_landing.scss */
+  /* line 60, ../../scss/partial/_landing.scss */
   .landingbox .box2 img {
     margin-top: 40px;
     margin-left: 30px; }
-  /* line 55, ../../scss/partial/_landing.scss */
+  /* line 64, ../../scss/partial/_landing.scss */
   .landingbox .box2 p {
     color: #fff;
     text-align: center;
     margin-top: 45px;
     font-size: 1.8em; }
-  /* line 64, ../../scss/partial/_landing.scss */
+  /* line 73, ../../scss/partial/_landing.scss */
   .landingbox .submissionId {
     width: 320px;
     margin: 0 auto;
     margin-top: 100px;
     display: none; }
-    /* line 66, ../../scss/partial/_landing.scss */
+    /* line 75, ../../scss/partial/_landing.scss */
+    .landingbox .submissionId .btn-danger {
+      border: blue solid 0px;
+      width: 40px;
+      height: 40px;
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+      margin: 13px 0;
+      background: #fff;
+      color: #0f3153; }
+    /* line 77, ../../scss/partial/_landing.scss */
     .landingbox .submissionId .panel {
       background-color: transparent;
       border: 1px solid #fff;
       border-radius: 0px; }
-    /* line 67, ../../scss/partial/_landing.scss */
+    /* line 79, ../../scss/partial/_landing.scss */
+    .landingbox .submissionId .or {
+      color: #fff;
+      font-size: 24px;
+      padding: 10px 0; }
+    /* line 81, ../../scss/partial/_landing.scss */
     .landingbox .submissionId .panel-heading {
       font-size: 16px; }
-    /* line 69, ../../scss/partial/_landing.scss */
+    /* line 83, ../../scss/partial/_landing.scss */
     .landingbox .submissionId ::-webkit-input-placeholder {
       color: #fff;
       font-style: italic; }
-    /* line 73, ../../scss/partial/_landing.scss */
+    /* line 87, ../../scss/partial/_landing.scss */
     .landingbox .submissionId :-moz-placeholder {
       /* Firefox 18- */
       color: #fff;
       font-style: italic; }
-    /* line 78, ../../scss/partial/_landing.scss */
+    /* line 92, ../../scss/partial/_landing.scss */
     .landingbox .submissionId ::-moz-placeholder {
       /* Firefox 19+ */
       color: #fff;
       font-style: italic; }
-    /* line 83, ../../scss/partial/_landing.scss */
+    /* line 97, ../../scss/partial/_landing.scss */
     .landingbox .submissionId :-ms-input-placeholder {
       color: #fff;
       font-style: italic; }
-    /* line 88, ../../scss/partial/_landing.scss */
+    /* line 102, ../../scss/partial/_landing.scss */
     .landingbox .submissionId input-group-addon, .landingbox .submissionId .input-group-btn {
       width: 0%; }
-    /* line 92, ../../scss/partial/_landing.scss */
+    /* line 106, ../../scss/partial/_landing.scss */
     .landingbox .submissionId .btn-default {
       padding: 9px 15px;
       font-size: 16px; }
-    /* line 93, ../../scss/partial/_landing.scss */
+    /* line 107, ../../scss/partial/_landing.scss */
     .landingbox .submissionId .form1 {
       background: transparent;
       color: #fff;
@@ -216,62 +244,71 @@ header .logo {
   .isgtabwrap .form-control {
     margin-bottom: 25px; }
   /* line 11, ../../scss/style.scss */
+  .isgtabwrap p {
+    font-size: 17px; }
+  /* line 15, ../../scss/style.scss */
+  .isgtabwrap .tab-inner-2 .table p {
+    padding-top: 10px; }
+  /* line 16, ../../scss/style.scss */
+  .isgtabwrap .tab-inner-2 .table .btn-toggle {
+    padding-top: 6px; }
+  /* line 19, ../../scss/style.scss */
   .isgtabwrap .row {
     margin-top: 25px; }
-  /* line 14, ../../scss/style.scss */
+  /* line 22, ../../scss/style.scss */
   .isgtabwrap .form-control {
     background: url(../images/trans-bg-white-dark.png);
     padding: 22px 15px; }
-  /* line 18, ../../scss/style.scss */
+  /* line 26, ../../scss/style.scss */
   .isgtabwrap ::-webkit-input-placeholder {
     color: #000;
     font-style: italic; }
-  /* line 22, ../../scss/style.scss */
+  /* line 30, ../../scss/style.scss */
   .isgtabwrap :-moz-placeholder {
     /* Firefox 18- */
     color: #000;
     font-style: italic; }
-  /* line 27, ../../scss/style.scss */
+  /* line 35, ../../scss/style.scss */
   .isgtabwrap ::-moz-placeholder {
     /* Firefox 19+ */
     color: #000;
     font-style: italic; }
-  /* line 32, ../../scss/style.scss */
+  /* line 40, ../../scss/style.scss */
   .isgtabwrap :-ms-input-placeholder {
     color: #000;
     font-style: italic; }
 
-/* line 38, ../../scss/style.scss */
+/* line 46, ../../scss/style.scss */
 .ISG-Tabs {
   background: url(../images/trans-bg-white-dark.png);
   border-bottom: 0px solid #ddd;
   margin-bottom: 0px; }
   @media (min-width: 768px) and (max-width: 979px) {
-    /* line 38, ../../scss/style.scss */
+    /* line 46, ../../scss/style.scss */
     .ISG-Tabs {
       display: inline-block; } }
   @media (max-width: 767px) {
-    /* line 38, ../../scss/style.scss */
+    /* line 46, ../../scss/style.scss */
     .ISG-Tabs {
       display: inline-block; } }
-  /* line 48, ../../scss/style.scss */
+  /* line 56, ../../scss/style.scss */
   .ISG-Tabs li {
     margin-bottom: 0px; }
-    /* line 51, ../../scss/style.scss */
+    /* line 59, ../../scss/style.scss */
     .ISG-Tabs li a {
       padding: 10px 25px;
       color: #373737;
-      font-size: 1.2em; }
+      font-size: 1.1em; }
       @media (max-width: 767px) {
-        /* line 51, ../../scss/style.scss */
+        /* line 59, ../../scss/style.scss */
         .ISG-Tabs li a {
           padding: 10px 13px; } }
       @media (max-width: 480px) {
-        /* line 51, ../../scss/style.scss */
+        /* line 59, ../../scss/style.scss */
         .ISG-Tabs li a {
           padding: 10px 7px; } }
 
-/* line 67, ../../scss/style.scss */
+/* line 75, ../../scss/style.scss */
 .ISG-Tabs > li.active > a,
 .ISG-Tabs > li.active > a:focus,
 .ISG-Tabs > li.active > a:hover {
@@ -284,48 +321,53 @@ header .logo {
   -webkit-border-radius: 0px;
   border-radius: 0px; }
 
-/* line 78, ../../scss/style.scss */
+/* line 86, ../../scss/style.scss */
 .ISG-Tabs li a .active,
 .ISG-Tabs li a .active-first {
   display: none; }
 
-/* line 83, ../../scss/style.scss */
+/* line 91, ../../scss/style.scss */
 .tab-nav {
   padding-left: 0;
   padding-right: 0;
   margin-top: 30px; }
 
-/* line 89, ../../scss/style.scss */
+/* line 97, ../../scss/style.scss */
 .tabContainer {
   background: url(../images/trans-bg-white.png);
   padding-left: 0;
   padding-right: 0;
   margin-top: -7px; }
-  /* line 94, ../../scss/style.scss */
+  /* line 102, ../../scss/style.scss */
   .tabContainer .btn-default {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: url(../images/input-bg.png);
     border: #444444 solid 1px; }
+  /* line 103, ../../scss/style.scss */
+  .tabContainer .btn-primary {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
 
 /* Large desktop */
 @media (min-width: 1200px) {
-  /* line 101, ../../scss/style.scss */
+  /* line 110, ../../scss/style.scss */
   .HideOnDesktop {
     display: none !important; } }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 110, ../../scss/style.scss */
+  /* line 119, ../../scss/style.scss */
   .HideOnTablate {
     display: none !important; } }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 119, ../../scss/style.scss */
+  /* line 128, ../../scss/style.scss */
   .HideOnTablate {
     display: none !important; } }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  /* line 128, ../../scss/style.scss */
+  /* line 137, ../../scss/style.scss */
   .HideOnMobile {
     display: none !important; } }

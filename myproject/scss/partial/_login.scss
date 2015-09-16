@@ -11,20 +11,22 @@
 	     h2 {
 	         background: url(../images/trans-bg-white-dark.png);
 	         margin-top: 0;
-	         padding: 10px;
-	         font-size: $font-size-large;
+	         padding:15px 10px;
+	         font-size:$font-size-regular;
 	         text-align: center;
 	         color: $accent-4;
 	     }
 	     label {
 	         color: $accent-4;
 	     }
+		 p { margin:0 0 0 0;font-size:$font-size-x-small}
+		 a {color:$color-primary;}
 	     .box {
 	         padding: 0px 20px 20px 20px;
 	     }
 	     .btn-primary {
 	         font-size: 16px;
-	         margin-top: 25px;
+	         margin-top: 10px;
 	         line-height: 25px
 	     }
 	 }

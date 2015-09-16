@@ -33,7 +33,15 @@
           <p class="text-center">Welcome : Charles L. Dobson</p>
         </div>
         <div class="text-right col-sm-4">
-          <p class=""><a href="#">Get Rate</a>  |  <a href="#">Endorse</a>  |  <a href="#">Logout</a></p>
+          <div class="btn-group" role="group" aria-label="..."> <a href="#" class="">Get Rate</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" class="">Endorse</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+            <div class="btn-group" role="group"> <a href="#" class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Account <span class="caret"></span> </a>
+              <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#createUser"><i class="fa fa-user"></i> Create User</a></li>
+                <li><a href="#"><i class="fa fa-refresh"></i> Change Password</a></li>
+                <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -46,37 +54,62 @@
   </div>
 </header>
 <div class="landingbox">
-  <div class="box box1">
-  <img src="assets/images/envalop.png" alt=""/>
-  <p>Get/Retrieve Rate</p>
- </div>
-  <div class="box box2">
-  <img src="assets/images/envalop-retrieve.png" alt=""/>
-   <p>Endorse</p>
+  <div class="box box1"> <img src="assets/images/envalop.png" alt=""/>
+    <p>Get/Retrieve Rate</p>
   </div>
-  
+  <div class="box box2"> <img src="assets/images/envalop-retrieve.png" alt=""/>
+    <p>Endorse</p>
+  </div>
   <div class="clearfix"></div>
-  
   <div class="submissionId" >
-
-  <div class="panel panel-default">
-  <div class="panel-heading">Submission ID</div>
-  <div class="panel-body">
-    
-    <div class="input-group">
-            <input type="text" class="form1" placeholder="Enter submission ID">
-            <div class="input-group-btn">
-                <button class="btn btn-default" type="submit" >Go</button>
-            </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Enter Details
+      </div>
+      <div class="panel-body">
+        <div class="input-group">
+          <input type="text" class="form1" placeholder="Enter submission ID">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit" >Go</button>
+          </div>
         </div>
+        <div class="text-center or">
+         <!--<button class="btn btn-danger">OR</button> -->
+         OR
+        </div>
+        <div class="input-group">
+          <input type="text" class="form1" placeholder="Enter Ensured Name">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit" >Go</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-    </div>
-</div>
-
-
 
 <!-- --> 
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="createUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog  modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script type="text/javascript"  src="vendor/js/jquery.min.js"></script> 
 <script type="text/javascript"  src="vendor/js/bootstrap.min.js"></script> 
 <script type="text/javascript"  src="assets/js/custom.js"></script>

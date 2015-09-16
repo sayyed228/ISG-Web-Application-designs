@@ -8,6 +8,8 @@
 <meta content="" name="description" />
 <meta content="" name="keywords" />
 <link href="vendor/css/bootstrap.min.css" rel="stylesheet" />
+<link href="vendor/css/hover.css" rel="stylesheet" />
+<link href="vendor/css/animate.css" rel="stylesheet" />
 <link href="assets/css/style.css" rel="stylesheet" />
 <!--<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,10 +29,10 @@
           <p>"A Trusted Partner in Your Success"</p>
         </div>
         <div class="col-sm-4">
-          <p class="text-center">Welcome : Charles L. Dobson</p>
+          
         </div>
         <div class="text-right col-sm-4">
-          <p class="">New Quote  |  Retrieve Quote  |  Logout</p>
+          
         </div>
       </div>
     </div>
@@ -41,18 +43,36 @@
     </div>
   </div>
 </header>
-<div class="loginbox">
+<div class="loginbox loginboxwrap">
   <form>
     <h2>ISG Login</h2>
     <div class="box">
       <div class="form-group">
-        <label for="exampleInputEmail1">Email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        <label for="exampleInputEmail1">User ID</label>
+        <input type="email" class="form-control" id="" placeholder="User ID">
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <input type="password" class="form-control" id="" placeholder="Password">
       </div>
+      <p>Forgot password? <a href="#" class="forgotpassword">Click here</a></p>
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+    </div>
+  </form>
+</div>
+<div class="loginbox resetwrap" style="display:none">
+  <form>
+    <h2>Password Reset</h2>
+    <div class="box ">
+      <div class="form-group">
+        <label for="exampleInputEmail1">User ID</label>
+        <input type="email" class="form-control" id="" placeholder="User ID">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">E mail ID</label>
+        <input type="email" class="form-control" id="" placeholder="E mail ID">
+      </div>
+      <p>Back to login? <a href="#" class="back-to-login">Click here</a></p>
       <button type="submit" class="btn btn-primary btn-block">Submit</button>
     </div>
   </form>
