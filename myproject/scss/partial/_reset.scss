@@ -2,8 +2,18 @@ body {
     background: url(../images/bg.jpg) no-repeat center center fixed;
     @include background-size(cover);
     width: 100%;
-    height: 100%;
+    height: 100%
 }
+
+.modal-backdrop.in {
+    opacity: 0.9
+}
+
+.pointer { cursor:pointer;}
+ .selectOption{
+		 padding: 8px 10px !important;
+		 min-height: 46px !important;
+		 }
 
 .btn,
 .form-control {
@@ -61,4 +71,10 @@ header {
             margin-bottom: 20px;
         }
     }
+}
+
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #0f3153;
+    border-color: #333;
 }

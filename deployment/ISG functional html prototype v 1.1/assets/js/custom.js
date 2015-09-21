@@ -6,20 +6,17 @@ $(document).ready(function() {
 
 
     $('.box1').click(function() {
-        $('#submissionId').show();
-        //$('#submissionId').addClass('swing animated');
+        $('.submissionId').show();
+        $('.submissionId').addClass('swing animated');
 		//$('.submissionId .panel-heading').text('Enter Submission ID');
 		$('.box2').removeClass('activebox');
-		$('#Policy-Number').hide();
 		$(this).addClass('activebox');
         swing();
     });
 	
 	$('.box2').click(function() {
-		$('#submissionId').hide();
-        $('#Policy-Number').show();
-        //$('#Policy-Number').addClass('swing animated');
-		$('#EntersubmissionID').attr('placeholder','');
+        $('.submissionId').show();
+        $('.submissionId').addClass('swing animated');
 		//$('.submissionId .panel-heading').text('Policy Number');
 		$('.box1').removeClass('activebox');
 		$(this).addClass('activebox');
@@ -61,15 +58,10 @@ $('.forgotpassword').click(function() {
 	});
 
 
-$('.rp-btn').click(function() {
- $('.rp-sidebar').show();
- $('.rp-content').removeClass('col-sm-12');
- $('.rp-content').addClass('col-sm-9');
-});
 
 
 
-/**** Yes/No Toggle button code *********/
+
 
 $('.btn-toggle').click(function() {
     $(this).find('.btn').toggleClass('active');  

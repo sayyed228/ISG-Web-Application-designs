@@ -10,7 +10,7 @@
 <link href="vendor/css/bootstrap.min.css" rel="stylesheet" />
 <link href="vendor/css/hover.css" rel="stylesheet" />
 <link href="vendor/css/animate.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="assets/css/style.css" rel="stylesheet" />
 
 <!--<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
@@ -37,8 +37,10 @@
           <div class="btn-group" role="group" aria-label="..."> <a href="#" class="">Get Rate</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" class="">Endorse</a>&nbsp;&nbsp; | &nbsp;&nbsp;
             <div class="btn-group" role="group"> <a href="#" class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Account <span class="caret"></span> </a>
               <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-refresh"></i> Change Password</a></li>
-                <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#createUser"><i class="fa fa-user"></i> Reports</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#createUser"><i class="fa fa-user"></i> Create User</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#ChangePassword"><i class="fa fa-refresh"></i> Change Password</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
               </ul>
             </div>
           </div>
@@ -68,39 +70,39 @@
       <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
         <div class="row">
           <div class="col-sm-12">
-            <h4>Insured Information</h4>
+            <h3>Insured Information</h3>
           </div>
           <div class="col-sm-4 col-md-3">
             <label for="exampleInputEmail1">Name Insured</label>
-            <input type="email" class="form-control"  placeholder="Name Insured">
+            <input type="text" class="form-control"  placeholder="Name Insured">
           </div>
           <div class="col-sm-4 col-md-3">
             <label for="exampleInputEmail1">Insured Information</label>
-            <input type="email" class="form-control"  placeholder="Insured Information">
+            <input type="text" class="form-control"  placeholder="Insured Information">
           </div>
           <div class="col-sm-4 col-md-3">
             <label for="exampleInputEmail1">Mailing Zip Address</label>
-            <input type="email" class="form-control"  placeholder="Mailing Zip Address">
+            <input type="text" class="form-control"  placeholder="Mailing Zip Address">
           </div>
           <div class="col-sm-4 col-md-3">
             <label for="exampleInputEmail1">Mailing Street Address</label>
-            <input type="email" class="form-control"  placeholder="Email">
+            <input type="text" class="form-control"  placeholder="Mailing Street Address">
           </div>
           <div class="col-sm-4 col-md-3">
             <label for="exampleInputEmail1">Mailing State Address</label>
-            <input type="email" class="form-control"  placeholder="Mailing State Address">
+            <input type="text" class="form-control"  placeholder="Mailing State Address">
           </div>
           <div class="col-sm-4 col-md-3">
             <label for="exampleInputEmail1">Mailing City Address</label>
-            <input type="email" class="form-control"  placeholder="Mailing City Address">
+            <input type="text" class="form-control"  placeholder="Mailing City Address">
           </div>
           <div class="col-sm-4 col-md-3">
             <label for="exampleInputEmail1">Insured Contractor License </label>
-            <input type="email" class="form-control"  placeholder="Insured Contractor License ">
+            <input type="text" class="form-control"  placeholder="Insured Contractor License ">
           </div>
           <div class="col-sm-4 col-md-3">
             <label for="exampleInputEmail1">Form of Business</label>
-            <input type="email" class="form-control"  placeholder="Form of Business">
+            <input type="text" class="form-control"  placeholder="Form of Business">
           </div>
         </div>
         <div class="row">
@@ -114,77 +116,226 @@
         </div>
       </div>
       <div role="tabpanel" class="tab-pane fade tab-inner-2" id="RiskInformation" aria-labelledby="RiskInformation-tab">
-        <div class="col-sm-12">
-          <h3>Type of CONST</h3>
-        </div>
-        <div class="col-sm-4 col-md-3">
-          <label for="exampleInputEmail1">Of homes Wood frame</label>
-          <input type="email" class="form-control"  placeholder="Of homes Wood frame">
-        </div>
-        <div class="col-sm-4 col-md-3">
-          <label for="exampleInputEmail1">Of homes Masonry Joist</label>
-          <input type="email" class="form-control"  placeholder="Insured Information">
-        </div>
-        <div class="col-sm-4 col-md-3">
-          <label for="exampleInputEmail1">Of homes Other</label>
-          <input type="email" class="form-control"  placeholder="Of homes Other">
-        </div>
-        <div class="col-sm-4 col-md-3">
-          <label for="exampleInputEmail1">Provide desc</label>
-          <input type="email" class="form-control"  placeholder="Provide desc">
-        </div>
-        <div class="col-sm-12">
-          <h3>Loss Information</h3>
-        </div>
-        <div class="col-sm-12">
-          <table class="table">
-            <tbody>
-              <tr>
-                <td><p>Do windows and doors remain locked after installation?</p></td>
-                <td width="120"><div class="btn-group btn-toggle">
-                    <button class="btn btn-default">ON</button>
-                    <button class="btn active btn-primary">OFF</button>
-                  </div></td>
-              </tr>
-              <tr>
-                <td><p>Is the insured a current member of a Home Builders Association?</p></td>
-                <td><div class="btn-group btn-toggle">
-                    <button class="btn btn-default">ON</button>
-                    <button class="btn active btn-primary">OFF</button>
-                  </div></td>
-              </tr>
-              <tr>
-                <td><p>Is profit included or excluded from the TECV figures shown?</p></td>
-                <td><div class="btn-group btn-toggle">
-                    <button class="btn btn-default">ON</button>
-                    <button class="btn active btn-primary">OFF</button>
-                  </div></td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>Type of CONST</h3>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">% Of homes Wood frame</label>
+            <input type="text" class="form-control"  placeholder="Of homes Wood frame">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">% Of homes Masonry Joist</label>
+            <input type="text" class="form-control"  placeholder="Insured Information">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">% Of homes Other</label>
+            <input type="text" class="form-control"  placeholder="Of homes Other">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Provide desc</label>
+            <input type="text" class="form-control"  placeholder="Provide desc">
+          </div>
+          <div class="col-sm-12">
+            <h3>Loss Information</h3>
+          </div>
+          <div class="col-sm-12">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td><p>Do windows and doors remain locked after installation?</p></td>
+                  <td width="120"><div class="btn-group btn-toggle">
+                      <button class="btn btn-default">ON</button>
+                      <button class="btn active btn-primary">OFF</button>
+                    </div></td>
+                </tr>
+                <tr>
+                  <td><p>Is the insured a current member of a Home Builders Association?</p></td>
+                  <td><div class="btn-group btn-toggle">
+                      <button class="btn btn-default">ON</button>
+                      <button class="btn active btn-primary">OFF</button>
+                    </div></td>
+                </tr>
+                <tr>
+                  <td><p>Is profit included or excluded from the TECV figures shown?</p></td>
+                  <td><div class="btn-group btn-toggle">
+                      <button class="btn btn-default">ON</button>
+                      <button class="btn active btn-primary">OFF</button>
+                    </div></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+           <div class="col-sm-12">
+            <div class="pull-right">
+              <button class="btn btn-default btn-lg">Save Info</button>
+              &nbsp;
+              <button class="btn btn-default btn-lg">Move to Coverage Info</button>
+            </div>
+          </div>
         </div>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="CoverageInformation" aria-labelledby="Coverage-Information-tab">
-        <h2>Coverage Information</h2>
-        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>Coverage Information</h3>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="form-group">
+              <label for="sel1">AOP deductible:</label>
+              <select class="form-control selectOption" id="">
+                <option>Select</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="form-group">
+              <label for="sel1">Theft Deductible:</label>
+              <select class="form-control selectOption" id="">
+                <option>Select</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div>
+              <label for="exampleInputEmail1">Exclude Wind/Hail</label>
+            </div>
+            <div class="btn-group btn-toggle">
+              <button class="btn active btn-primary">ON</button>
+              <button class="btn  btn-default">OFF</button>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3"><br/>
+            <button class="btn btn-primary btn-lg">Load Wind only Rates</button>
+          </div>
+            <div class="col-sm-12">
+            <h3>Insurance Limits</h3>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Any one structure *</label>
+            <input type="text" class="form-control"  placeholder="Any one structure">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Any one occurrence *</label>
+            <input type="text" class="form-control"  placeholder="Any one occurrence">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Property in Transit</label>
+            <input type="text" class="form-control"  placeholder="Property in Transit">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Model Home Contents</label>
+            <input type="text" class="form-control"  placeholder="Model Home Contents">
+          </div>
+          <div class="col-sm-4 col-md-6">
+            <label for="exampleInputEmail1">Property temporarily stored in other premises	</label>
+             <input type="text" class="form-control"  placeholder="Property temporarily stored in other premises">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Soft Costs</label>
+            <input type="text" class="form-control"  placeholder="Soft Costs">
+          </div>
+          <div class="col-sm-12">
+            <div class="pull-right">
+              <button class="btn btn-default btn-lg">Save Info</button>
+              &nbsp;
+              <button class="btn btn-default btn-lg">Move to Reporting</button>
+            </div>
+          </div>
+        </div>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="Reporting" aria-labelledby="Reporting-tab">
         <h2>Reporting</h2>
         <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="RateandPremium" aria-labelledby="Rate-and-Premium-tab">
-        <h2>Rate and Premium</h2>
-        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+        <div class="row">
+        <div class="col-sm-12">
+            <h3>Rate and Premium</h3>
+          </div>
+          
+         <div class="col-sm-12 rp-content">
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg rp-btn">Get EC Coverage</button>
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg rp-btn">Get FWD Coverage</button>
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg  rp-btn">Get FWDC Coverage</button>
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg  rp-btn">Get SCC Coverage</button>
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg  rp-btn">Get SOCC Coverage</button>
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg  rp-btn">Get TUDC Coverage</button>
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg  rp-btn">Get TC Coverage</button>
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg  rp-btn">Get OLC Coverage</button>
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg  rp-btn">Get POC Coverage</button>
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg  rp-btn">Get LTSPC Coverage</button>
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg  rp-btn">Get MHC Coverage</button>
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <button class="btn btn-info btn-block btn-lg  rp-btn">Get OCOTC Coverage</button>
+           </div>
+         </div>
+         <div class="col-sm-3 rp-sidebar">
+           <div class="panel panel-success">
+              <div class="panel-heading">Get OLC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer"/></div>
+              <div class="panel-body">
+               
+               <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Masonry Cov required </label>
+                    <input type="text" class="form-control" id="" placeholder="Masonry Cov required ">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Deductible</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Limit</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+               
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- --> 
+
+<!-- Change Password --> 
+<script type="text/javascript"  src="assets/js/change-password.js"></script> 
 <script type="text/javascript"  src="vendor/js/jquery.min.js"></script> 
 <script type="text/javascript"  src="vendor/js/bootstrap.min.js"></script> 
 <script type="text/javascript"  src="assets/js/custom.js"></script>
