@@ -3,10 +3,10 @@ require 'compass/import-once/activate'
 
 # Set this to the root of your project when deployed:
 http_path = "public/css"
-css_dir = "assets/css"
+css_dir = "assets/Styles/custom"
 sass_dir = "scss"
 images_dir = "assets/images"
-javascripts_dir = "assets/js"
+javascripts_dir = "assets/Scripts"
 output_style = :nested
 relative_assets = true
 

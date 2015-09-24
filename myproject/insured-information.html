@@ -7,13 +7,13 @@
 <title>ISG Insured Information</title>
 <meta content="" name="description" />
 <meta content="" name="keywords" />
-<link href="vendor/css/bootstrap.min.css" rel="stylesheet" />
-<link href="vendor/css/hover.css" rel="stylesheet" />
-<link href="vendor/css/animate.css" rel="stylesheet" />
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link href="assets/css/style.css" rel="stylesheet" />
+<link href="assets/Styles/bootstrap.min.css" rel="stylesheet" />
+<link href="assets/Styles/hover.css" rel="stylesheet" />
+<link href="assets/Styles/animate.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/Styles/font-awesome.min.css">
+<link href="assets/Styles/custom/style.css" rel="stylesheet" />
 
-<!--<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
+<!--<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/Styles/font-awesome.min.css" rel="stylesheet"> -->
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -25,22 +25,42 @@
 <body>
 <header>
   <div class="container-fluid top">
-    <div class="container">
+      <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <p>"A Trusted Partner in Your Success"</p>
+          <p class="zero">
+          <img src="assets/images/logo.png" alt="ISG Logo" class="" style="margin-top:-8px"/> &nbsp;&nbsp; <span class="hidden-xs hidden-sm">"A Trusted Partner in Your Success"</span></p>
         </div>
-        <div class="col-sm-4">
-          <p class="text-center">Welcome : Charles L. Dobson</p>
+        <div class="col-sm-3">
+          <p class="text-right">Welcome : Charles L. Dobson</p>
         </div>
-        <div class="text-right col-sm-4">
-          <div class="btn-group" role="group" aria-label="..."> <a href="#" class="">Get Rate</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" class="">Endorse</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+        <div class="text-right col-sm-5">
+          <div class="btn-group" role="group" aria-label="...">
+           <a href="#" class="GetRate">Get Rate</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" class="Endorse">Endorse</a>&nbsp;&nbsp; | &nbsp;&nbsp; <a href="#">Policy/Rate List</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+           
+           <div class="searchbox1 bounceInDown animated">
+             <div class="input-group">
+              <input type="text" class="form-control form1" id="" placeholder="Enter Submission ID">
+             <div class="input-group-btn">
+             <button class="btn btn-default" type="button" >Go</button>
+             </div>
+            </div>
+           </div>
+           
+           <div class="searchbox2 bounceInDown animated">
+             <div class="input-group">
+              <input type="text" class="form-control form1" id="" placeholder="Enter Policy Number">
+             <div class="input-group-btn">
+             <button class="btn btn-default" type="button" >Go</button>
+             </div>
+            </div>
+           </div>
             <div class="btn-group" role="group"> <a href="#" class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Account <span class="caret"></span> </a>
               <ul class="dropdown-menu">
-                <li><a href="#" data-toggle="modal" data-target="#createUser"><i class="fa fa-user"></i> Reports</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#createUser"><i class="fa fa-user"></i> Create User</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#ChangePassword"><i class="fa fa-refresh"></i> Change Password</a></li>
-                <li><a href="login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#createUser"><i class="fa fa-file-text-o"></i> &nbsp;Reports</a></li>
+                <li><a href="create-user.html"><i class="fa fa-user"></i> &nbsp;Create User</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#ChangePassword"><i class="fa fa-refresh"></i> &nbsp;Change Password</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out"></i> &nbsp;Logout</a></li>
               </ul>
             </div>
           </div>
@@ -48,20 +68,50 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <!--<div class="container">
     <div class="row">
       <div class="col-sm-12 text-center"> <img src="assets/images/logo.png" alt="ISG Logo" class="logo"/> </div>
       <div class="clearfix"></div>
     </div>
-  </div>
+  </div> -->
 </header>
 <div class="container tab-nav">
   <ul id="myTabs" class="nav nav-tabs ISG-Tabs" role="tablist">
-    <li role="presentation" class="active"> <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"> <img src="assets/images/Insured-Information.png" class="normal  active-first" alt=""/><img src="assets/images/Insured-Information-active.png" class="active" alt=""/>&nbsp;<span class="hidden-xs hidden-sm hidden-md">Insured Information</span></a> </li>
-    <li role="presentation"> <a href="#RiskInformation" role="tab"  data-toggle="tab" aria-controls="RiskInformation"> <img src="assets/images/Risk-Information.png"  class="normal" alt=""/><img src="assets/images/Risk-Information-active.png"  class="active" alt=""/><span class="hidden-xs hidden-sm hidden-md">&nbsp;Risk Information</span></a></li>
-    <li role="presentation"><a href="#CoverageInformation" role="tab"  data-toggle="tab" aria-controls="Coverage-Information"> <img src="assets/images/Coverage-Information.png" class="normal" alt=""/><img src="assets/images/Coverage-Information-active.png" class="active" alt=""/><span class="hidden-xs hidden-sm hidden-md">&nbsp;Coverage Information</span></a></li>
-    <li role="presentation"><a href="#Reporting" role="tab"  data-toggle="tab" aria-controls="Coverage-Information"> <img src="assets/images/Reporting.png" class="normal" alt=""/><img src="assets/images/Reporting-active.png" class="active" alt=""/><span class="hidden-xs hidden-sm hidden-md">&nbsp;Reporting</span></a></li>
-    <li role="presentation"><a href="#RateandPremium" role="tab"  data-toggle="tab" aria-controls="Rate-and-Premium"> <img src="assets/images/Rate-and-Premium.png" class="normal" alt=""/><img src="assets/images/Rate-and-Premium-active.png" class="active" alt=""/><span class="hidden-xs hidden-sm hidden-md">&nbsp;Rate and Premium</span></a></li>
+    <li role="presentation" class="active">
+     <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+      <img src="assets/images/Insured-Information.png" class="normal  active-first" alt=""/>
+      <img src="assets/images/Insured-Information-active.png" class="active" alt=""/>
+      <span class="hidden-xs hidden-sm hidden-md">&nbsp;Insured Information</span>
+     </a>
+    </li>
+    <li role="presentation">
+     <a href="#RiskInformation" role="tab"  data-toggle="tab" aria-controls="RiskInformation" aria-expanded="true">
+      <img src="assets/images/Risk-Information.png"  class="normal" alt=""/>
+      <img src="assets/images/Risk-Information-active.png"  class="active" alt=""/>
+      <span class="hidden-xs hidden-sm hidden-md">&nbsp;Risk Information</span>
+     </a>
+     </li>
+    <li role="presentation">
+     <a href="#CoverageInformation" role="tab"  data-toggle="tab" aria-controls="CoverageInformation"  aria-expanded="true">
+      <img src="assets/images/Coverage-Information.png" class="normal" alt=""/>
+      <img src="assets/images/Coverage-Information-active.png" class="active" alt=""/>
+      <span class="hidden-xs hidden-sm hidden-md">&nbsp;Coverage Information</span>
+     </a>
+    </li>
+    <li role="presentation">
+     <a href="#Reporting" role="tab"  data-toggle="tab" aria-controls="Coverage-Information">
+      <img src="assets/images/Reporting.png" class="normal" alt=""/>
+      <img src="assets/images/Reporting-active.png" class="active" alt=""/>
+      <span class="hidden-xs hidden-sm hidden-md">&nbsp;Reporting</span>
+     </a>
+    </li>
+    <li role="presentation">
+     <a href="#RateandPremium" role="tab"  data-toggle="tab" aria-controls="Rate-and-Premium">
+      <img src="assets/images/Rate-and-Premium.png" class="normal" alt=""/>
+      <img src="assets/images/Rate-and-Premium-active.png" class="active" alt=""/>
+      <span class="hidden-xs hidden-sm hidden-md">&nbsp;Rate and Premium</span>
+     </a>
+    </li>
   </ul>
 </div>
 <div class="container tabContainer">
@@ -76,25 +126,10 @@
             <label for="exampleInputEmail1">Name Insured</label>
             <input type="text" class="form-control"  placeholder="Name Insured">
           </div>
-          <div class="col-sm-4 col-md-3">
-            <label for="exampleInputEmail1">Insured Information</label>
+          <div class="col-sm-8 col-md-8 col-lg-6">
+            <label for="exampleInputEmail1">If building is in the name other then first name insured, please specify		
+		</label>
             <input type="text" class="form-control"  placeholder="Insured Information">
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <label for="exampleInputEmail1">Mailing Zip Address</label>
-            <input type="text" class="form-control"  placeholder="Mailing Zip Address">
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <label for="exampleInputEmail1">Mailing Street Address</label>
-            <input type="text" class="form-control"  placeholder="Mailing Street Address">
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <label for="exampleInputEmail1">Mailing State Address</label>
-            <input type="text" class="form-control"  placeholder="Mailing State Address">
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <label for="exampleInputEmail1">Mailing City Address</label>
-            <input type="text" class="form-control"  placeholder="Mailing City Address">
           </div>
           <div class="col-sm-4 col-md-3">
             <label for="exampleInputEmail1">Insured Contractor License </label>
@@ -104,40 +139,60 @@
             <label for="exampleInputEmail1">Form of Business</label>
             <input type="text" class="form-control"  placeholder="Form of Business">
           </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Insured Website</label>
+            <input type="text" class="form-control"  placeholder="Insured Website">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Mailing Street</label>
+            <input type="text" class="form-control"  placeholder="Mailing Street">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Mailing Zip</label>
+            <input type="text" class="form-control"  placeholder="Mailing Zip">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Mailing City</label>
+            <input type="text" class="form-control"  placeholder="Mailing City">
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Mailing State</label>
+            <input type="text" class="form-control"  placeholder="Mailing State">
+          </div>
         </div>
         <div class="row">
           <div class="col-sm-12">
             <div class="pull-right">
               <button class="btn btn-default btn-lg">Save Info</button>
               &nbsp;
-              <button class="btn btn-default btn-lg">Move To Risk Info</button>
-            </div>
+              <button class="btn btn-default btn-lg RiskInformation">Move To Risk Info</button>
+              <!--  <a href="#RiskInformation" role="tab" data-toggle="tab" aria-controls="RiskInformation" aria-expanded="true" class="RiskInformation">Move to Coverage Info </a> --></div>
           </div>
         </div>
       </div>
-      <div role="tabpanel" class="tab-pane fade tab-inner-2" id="RiskInformation" aria-labelledby="RiskInformation-tab">
+      <div role="tabpanel" class="tab-pane fade tab-inner-2 " id="RiskInformation" aria-labelledby="RiskInformation-tab">
         <div class="row">
           <div class="col-sm-12">
-            <h3>Type of CONST</h3>
+            <h3>Type of construction</h3>
           </div>
-          <div class="col-sm-4 col-md-3">
-            <label for="exampleInputEmail1">% Of homes Wood frame</label>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">% Of Homes Wood Frame</label>
             <input type="text" class="form-control"  placeholder="Of homes Wood frame">
           </div>
           <div class="col-sm-4 col-md-3">
-            <label for="exampleInputEmail1">% Of homes Masonry Joist</label>
+            <label for="exampleInputEmail1">% Of Homes Masonry Joist</label>
             <input type="text" class="form-control"  placeholder="Insured Information">
           </div>
           <div class="col-sm-4 col-md-3">
-            <label for="exampleInputEmail1">% Of homes Other</label>
+            <label for="exampleInputEmail1">% Of Homes Other</label>
             <input type="text" class="form-control"  placeholder="Of homes Other">
           </div>
           <div class="col-sm-4 col-md-3">
-            <label for="exampleInputEmail1">Provide desc</label>
+            <label for="exampleInputEmail1">Provide Description</label>
             <input type="text" class="form-control"  placeholder="Provide desc">
           </div>
           <div class="col-sm-12">
-            <h3>Loss Information</h3>
+            <h3 class="pad-top15">Loss Information</h3>
           </div>
           <div class="col-sm-12">
             <table class="table">
@@ -145,22 +200,22 @@
                 <tr>
                   <td><p>Do windows and doors remain locked after installation?</p></td>
                   <td width="120"><div class="btn-group btn-toggle">
-                      <button class="btn btn-default">ON</button>
-                      <button class="btn active btn-primary">OFF</button>
+                      <button class="btn btn-default">Yes</button>
+                      <button class="btn btn-default">No</button>
                     </div></td>
                 </tr>
                 <tr>
                   <td><p>Is the insured a current member of a Home Builders Association?</p></td>
                   <td><div class="btn-group btn-toggle">
-                      <button class="btn btn-default">ON</button>
-                      <button class="btn active btn-primary">OFF</button>
+                      <button class="btn btn-default">Yes</button>
+                      <button class="btn btn-default">No</button>
                     </div></td>
                 </tr>
                 <tr>
                   <td><p>Is profit included or excluded from the TECV figures shown?</p></td>
                   <td><div class="btn-group btn-toggle">
-                      <button class="btn btn-default">ON</button>
-                      <button class="btn active btn-primary">OFF</button>
+                      <button class="btn btn-default">Yes</button>
+                      <button class="btn btn-default">No</button>
                     </div></td>
                 </tr>
                 <tr>
@@ -170,16 +225,17 @@
               </tbody>
             </table>
           </div>
-           <div class="col-sm-12">
+          <div class="col-sm-12">
             <div class="pull-right">
               <button class="btn btn-default btn-lg">Save Info</button>
               &nbsp;
-              <button class="btn btn-default btn-lg">Move to Coverage Info</button>
-            </div>
+              <button class="btn btn-default btn-lg CoverageInformation">Move to Coverage Info</button>
+              <!--<a href="#CoverageInformation" role="tab" data-toggle="tab" aria-controls="CoverageInformation" aria-expanded="true" class="CoverageInformation">Move to Coverage Info </a>--> </div>
           </div>
         </div>
       </div>
-      <div role="tabpanel" class="tab-pane fade" id="CoverageInformation" aria-labelledby="Coverage-Information-tab">
+      
+      <div role="tabpanel" class="tab-pane fade" id="CoverageInformation" aria-labelledby="CoverageInformation">
         <div class="row">
           <div class="col-sm-12">
             <h3>Coverage Information</h3>
@@ -206,19 +262,9 @@
               </select>
             </div>
           </div>
-          <div class="col-sm-4 col-md-3">
-            <div>
-              <label for="exampleInputEmail1">Exclude Wind/Hail</label>
-            </div>
-            <div class="btn-group btn-toggle">
-              <button class="btn active btn-primary">ON</button>
-              <button class="btn  btn-default">OFF</button>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3"><br/>
-            <button class="btn btn-primary btn-lg">Load Wind only Rates</button>
-          </div>
-            <div class="col-sm-12">
+        
+        
+          <div class="col-sm-12">
             <h3>Insurance Limits</h3>
           </div>
           <div class="col-sm-4 col-md-3">
@@ -238,8 +284,8 @@
             <input type="text" class="form-control"  placeholder="Model Home Contents">
           </div>
           <div class="col-sm-4 col-md-6">
-            <label for="exampleInputEmail1">Property temporarily stored in other premises	</label>
-             <input type="text" class="form-control"  placeholder="Property temporarily stored in other premises">
+            <label for="exampleInputEmail1">Property temporarily stored in other premises </label>
+            <input type="text" class="form-control"  placeholder="Property temporarily stored in other premises">
           </div>
           <div class="col-sm-4 col-md-3">
             <label for="exampleInputEmail1">Soft Costs</label>
@@ -249,65 +295,275 @@
             <div class="pull-right">
               <button class="btn btn-default btn-lg">Save Info</button>
               &nbsp;
-              <button class="btn btn-default btn-lg">Move to Reporting</button>
+              <button class="btn btn-default btn-lg Reporting">Move to Reporting</button>
             </div>
           </div>
         </div>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="Reporting" aria-labelledby="Reporting-tab">
-        <h2>Reporting</h2>
-        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+        <h3>Reporting</h3>
+       <div class="row">
+       <div class="col-sm-12 zero">
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Type of Reporting</label>
+            <select class="form-control selectOption" id="target">
+                <option>Select</option>
+                <option>New Starts Reporting</option>
+                <option>Single Shot Reporting</option>
+                <option>Remodel or Renovation work</option>
+              </select>
+         </div>
+           <div class="col-sm-4 col-md-5">
+            <div>
+              <label for="exampleInputEmail1">Exclude Wind/Hail</label>
+            </div>
+            <div class="btn-group btn-toggle">
+              <button class="btn active btn-primary">Yes</button>
+              <button class="btn  btn-default">No</button>
+             
+            </div>
+             <button class="btn btn-primary btn-lg" style="margin-left:50px;" data-toggle="modal" data-target="#Load_Wind_only_Rates">Load Wind only Rates</button>
+          </div>
+        </div>
+        <div class="col-sm-12 zero">
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Street Address/Lot</label>
+            <input type="text" class="form-control"  placeholder="Street Address/Lot">
+         </div>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Zip Code</label>
+            <input type="text" class="form-control"  placeholder="Zip Code">
+         </div>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">City</label>
+            <input type="text" class="form-control"  placeholder="City">
+         </div>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">State</label>
+            <input type="text" class="form-control"  placeholder="State">
+         </div>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Distance to coastal water</label>
+            <input type="text" class="form-control"  placeholder="Distance to coastal water">
+         </div>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Estimates TECV per structure</label>
+            <input type="text" class="form-control"  placeholder="Estimates TECV per structure">
+         </div>
+         <span class="TypeofReportingOptionals"  id="NewStartsReporting">
+         <!--<h1>NewStartsReporting</h1>-->
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">County</label>
+            <input type="text" class="form-control"  placeholder="County">
+         </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">of homes</label>
+            <input type="text" class="form-control"  placeholder="of homes">
+         </div>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Avg build to sell time</label>
+            <input type="text" class="form-control"  placeholder="Avg build to sell time">
+         </div>
+         <div class="col-sm-8 col-md-6">
+            <label for="exampleInputEmail1">Estimated Number of Homes in Progress at any One Time</label>
+            <input type="text" class="form-control"  placeholder="Estimated Number of Homes in Progress at any One Time">
+         </div>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Start Date</label>
+            <input type="text" class="form-control"  placeholder="Start Date">
+         </div>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Projected Date of close</label>
+            <input type="text" class="form-control" placeholder="Projected Date of close">
+         </div>
+         </span>
+         <span class="TypeofReportingOptionals" id="SingleShotReporting">
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Type of Structure</label>
+            <input type="text" class="form-control"  placeholder="Type of Structure">
+         </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">County</label>
+            <input type="text" class="form-control"  placeholder="County">
+         </div>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1"> of homes</label>
+            <input type="text" class="form-control"  placeholder=" of homes">
+         </div>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1"> Original Start Date</label>
+            <input type="text" class="form-control"  placeholder=" Original Start Date">
+         </div>
+         <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Projected Date of Close</label>
+            <input type="text" class="form-control"  placeholder="Projected Date of Close">
+         </div>
+         </span>
+        <span class="TypeofReportingOptionals" id="RemodelorRenovationwork">
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Start Date</label>
+            <input type="text" class="form-control"  placeholder="Start Date">
+         </div>
+          <div class="col-sm-4 col-md-3">
+            <label for="exampleInputEmail1">Projected Date of Close</label>
+            <input type="text" class="form-control"  placeholder="Projected Date of Close">
+         </div>
+         </span>
+        </div>
+       </div>
+        <div class="col-sm-12">
+          <div class="pull-right">
+            <button class="btn btn-default btn-lg">Save Info</button>
+            &nbsp;
+            <button class="btn btn-default btn-lg  Rate_and_Premium">Move to Reporting</button>
+            <br/>
+            <br/>
+          </div>
+        </div>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="RateandPremium" aria-labelledby="Rate-and-Premium-tab">
         <div class="row">
-        <div class="col-sm-12">
+          <div class="col-sm-12">
             <h3>Rate and Premium</h3>
+            <label>Your base rate is 0.80</label>
           </div>
-          
-         <div class="col-sm-12 rp-content">
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg rp-btn">Get EC Coverage</button>
-           </div>
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg rp-btn">Get FWD Coverage</button>
-           </div>
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg  rp-btn">Get FWDC Coverage</button>
-           </div>
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg  rp-btn">Get SCC Coverage</button>
-           </div>
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg  rp-btn">Get SOCC Coverage</button>
-           </div>
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg  rp-btn">Get TUDC Coverage</button>
-           </div>
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg  rp-btn">Get TC Coverage</button>
-           </div>
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg  rp-btn">Get OLC Coverage</button>
-           </div>
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg  rp-btn">Get POC Coverage</button>
-           </div>
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg  rp-btn">Get LTSPC Coverage</button>
-           </div>
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg  rp-btn">Get MHC Coverage</button>
-           </div>
-           <div class="col-sm-6 col-md-4 col-lg-3">
-            <button class="btn btn-info btn-block btn-lg  rp-btn">Get OCOTC Coverage</button>
-           </div>
-         </div>
-         <div class="col-sm-3 rp-sidebar">
-           <div class="panel panel-success">
-              <div class="panel-heading">Get OLC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer"/></div>
+          <div class="col-sm-12 rp-content">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg rp-btn" id="GetECCoverage_Btn">Get EC Coverage</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg rp-btn" id="GetFWDCoverage_Btn">Get FWD Coverage</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg  rp-btn" id="GetFWDCCoverage_Btn">Get FWDC Coverage</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg  rp-btn" id="GetSCCCoverage_Btn">Get SCC Coverage</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg  rp-btn" id="GetSOCCCoverage_Btn">Get SOCC Coverage</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg  rp-btn" id="GetTUDCCoverage_Btn">Get TUDC Coverage</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg  rp-btn" id="GetTCCoverage_Btn">Get TC Coverage</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg  rp-btn" id="GetOLCCoverage_Btn">Get OLC Coverage</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg  rp-btn" id="GetPOCCoverage_Btn">Get POC Coverage</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg  rp-btn" id="GetLTSPCCoverage_Btn">Get LTSPC Coverage</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg  rp-btn" id="GetMHCCoverage_Btn">Get MHC Coverage</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <button class="btn btn-info btn-block btn-lg  rp-btn" id="GetOCOTCCoverage_Btn">Get OCOTC Coverage</button>
+            </div>
+          </div>
+          <div class="col-sm-3 rp-sidebar">
+          <!-- Get EC Coverage -->
+            <div class="panel panel-success" id="GetECCoverage">
+              <div class="panel-heading">Get EC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
               <div class="panel-body">
-               
-               <form>
+                <form>
+                  <div class="form-group">
+                    <div>Masonry Cov required </div>
+                    <div class="btn-group btn-toggle">
+                      <a href="#_" class="btn btn-sm btn-default">Yes</a>
+                      <a href="#_" class="btn btn-sm btn-default">No</a>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Deductible</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Limit</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- Get FWD Coverage -->
+            <div class="panel panel-success" id="GetFWDCoverage">
+              <div class="panel-heading">Get FWD Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <div>Masonry Cov required </div>
+                    <div class="btn-group btn-toggle">
+                      <a href="#_" class="btn btn-sm btn-default">Yes</a>
+                      <a href="#_" class="btn btn-sm btn-default">No</a>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Deductible</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Limit</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- Get FWDC Coverage -->
+            <div class="panel panel-success" id="GetFWDCCoverage">
+              <div class="panel-heading">Get FWDC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
+              <div class="panel-body">
+                  <form>
+                  <div class="form-group">
+                    <div>Location within the 100 & 200-year plans </div>
+                    <div class="btn-group btn-toggle">
+                      <a href="#_" class="btn btn-sm btn-default">Yes</a>
+                      <a href="#_" class="btn btn-sm btn-default">No</a>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Deductible</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Limit</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- Get SCC Coverage -->
+            <div class="panel panel-success" id="GetSCCCoverage">
+              <div class="panel-heading">Get SCC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Country </label>
+                    <input type="text" class="form-control" id="" placeholder="Masonry Cov required ">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Rate</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Limit</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- Get SOCC Coverage -->
+            <div class="panel panel-success" id="GetSOCCCoverage">
+              <div class="panel-heading">Get SOCC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
+              <div class="panel-body">
+                <form>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Masonry Cov required </label>
                     <input type="text" class="form-control" id="" placeholder="Masonry Cov required ">
@@ -320,10 +576,163 @@
                     <label for="exampleInputPassword1">Limit</label>
                     <input type="text" class="form-control" id="" placeholder="Limit">
                   </div>
-                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
                 </form>
-               
               </div>
+            </div>
+            <!-- Get TUDC Coverage -->
+            <div class="panel panel-success" id="GetTUDCCoverage">
+              <div class="panel-heading">Get TUDC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Masonry Cov required </label>
+                    <input type="text" class="form-control" id="" placeholder="Masonry Cov required ">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Deductible</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Limit</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- Get TC Coverage -->
+            <div class="panel panel-success" id="GetTCCoverage">
+              <div class="panel-heading">Get TC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Masonry Cov required </label>
+                    <input type="text" class="form-control" id="" placeholder="Masonry Cov required ">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Deductible</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Limit</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- Get OLC Coverage -->
+            <div class="panel panel-success" id="GetOLCCoverage">
+              <div class="panel-heading">Get OLC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Masonry Cov required </label>
+                    <input type="text" class="form-control" id="" placeholder="Masonry Cov required ">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Deductible</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Limit</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- Get POC Coverage -->
+            <div class="panel panel-success" id="GetPOCCoverage">
+              <div class="panel-heading">Get POC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Occupancy</label>
+                    <input type="text" class="form-control" id="" placeholder="Masonry Cov required ">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Number of Days</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- Get LTSPC Coverage -->
+            <div class="panel panel-success" id="GetLTSPCCoverage">
+              <div class="panel-heading">Get LTSPC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Rate</label>
+                    <input type="text" class="form-control" id="" placeholder="Masonry Cov required ">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">A Factor</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Deductible</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Limit</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Total number of projected new start and existing invontory </label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- Get MHC Coverage -->
+            <div class="panel panel-success" id="GetMHCCoverage">
+              <div class="panel-heading">Get MHC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Rate</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Deductible</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- Get OCOTC Coverage -->
+            <div class="panel panel-success" id="GetOCOTCCoverage">
+              <div class="panel-heading">Get OCOTC Coverage <img src="assets/images/CLOSE-24.png" alt="" class="pull-right pointer rp-sidebarClose"/></div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Rate</label>
+                    <input type="text" class="form-control" id="" placeholder="Limit">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Deductible</label>
+                    <input type="text" class="form-control" id="" placeholder="Deductible">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="pull-right">
+              <button class="btn btn-default btn-lg">Calculate Premium</button>
+              &nbsp;
+              <button class="btn btn-default btn-lg">Submit Rate/Premium</button>
             </div>
           </div>
         </div>
@@ -333,11 +742,106 @@
 </div>
 
 <!-- --> 
+<!-- Load Wind only Rates -->
+<div class="modal fade" id="Load_Wind_only_Rates" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Exclude Wind/Hail</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        <div class="col-sm-6">
+        <label for="exampleInputEmail1">County</label>
+         <select class="form-control selectOption" id="">
+                <option>Select</option>
+                <option>BREVARD</option>
+                <option>CALHOUN</option>
+                <option>CHARLOTTE</option>
+              </select>
+        </div>
+        <div class="col-sm-6">
+        <label for="exampleInputEmail1">Distance to Coast</label>
+         <select class="form-control selectOption" id="">
+                <option>Select</option>
+                <option>B &lt; 1/2 Mile</option>
+                <option>C 0.5 t o 1 Mile</option>
+                <option>D 1 to 2 Miles</option>
+              </select>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-sm-12 zero margin-top15">
+         <div class="col-sm-6">
+            <label for="exampleInputEmail1">Frame</label>
+            <input type="text" class="form-control"  placeholder="" value="0.6472">
+         </div>
+          <div class="col-sm-6">
+            <label for="exampleInputEmail1">Masonry</label>
+            <input type="text" class="form-control"  placeholder="Projected Date of Close" value="0.5900">
+         </div>
+        </div>
+       </div> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Go</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- Change Password --> 
-<script type="text/javascript"  src="assets/js/change-password.js"></script> 
-<script type="text/javascript"  src="vendor/js/jquery.min.js"></script> 
-<script type="text/javascript"  src="vendor/js/bootstrap.min.js"></script> 
-<script type="text/javascript"  src="assets/js/custom.js"></script>
+
+
+<!-- Change Password -->
+<script type="text/javascript"  src="assets/Scripts/custom/change-password.js"></script>
+<script type="text/javascript"  src="assets/Scripts/jquery.min.js"></script> 
+<script type="text/javascript"  src="assets/Scripts/bootstrap.min.js"></script> 
+
+
+<script>
+$(document).ready(function(e) {
+   
+   /* searchbox */
+   $('#myTabs , .tabContainer').click(function() {
+	  $('.searchbox1 , .searchbox2').fadeOut(); 
+	 });
+   
+   /** Type of Reporting Optionals  **/
+   $( "#target" ).change(function() {
+    
+	var TypeofReportingValue = $(this).val();
+	//alert(TypeofReportingValue);
+	
+	if(TypeofReportingValue == 'New Starts Reporting'){
+		$('.TypeofReportingOptionals').hide();
+		$('#NewStartsReporting').show();
+	 }
+	 
+	 else if(TypeofReportingValue == 'Single Shot Reporting'){
+		$('.TypeofReportingOptionals').hide();
+		$('#SingleShotReporting').show(); 
+	 }
+	 
+	 else if(TypeofReportingValue == 'Remodel or Renovation work'){
+		$('.TypeofReportingOptionals').hide();
+		$('#RemodelorRenovationwork').show(); 
+	 }
+	 
+	 else {
+		 
+		 $('.TypeofReportingOptionals').hide();
+		 }
+	
+   });
+   
+    
+});
+
+
+</script>
+ 
+<script type="text/javascript"  src="assets/Scripts/custom/custom.js"></script>
 </body>
 </html>

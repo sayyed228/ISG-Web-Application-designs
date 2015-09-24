@@ -34,7 +34,6 @@ $(document).ready(function() {
 
 
     $('.ISG-Tabs li a').click(function() {
-
         $('.ISG-Tabs li a').find('.active').hide();
         $('.ISG-Tabs li a').find('.normal').show();
         $(this).find('.normal').hide();
@@ -69,32 +68,32 @@ $('.rp-btn').click(function() {
 
 
 
+$('.RiskInformation').click(function(){
+ $('a[href="#RiskInformation"]').trigger( "click" );
+});
+
+$('.CoverageInformation').click(function(){
+ $('a[href="#CoverageInformation"]').trigger( "click" );
+});
+
+
+$('.Reporting').click(function(){
+ $('a[href="#Reporting"]' ).trigger( "click" );
+});
+
+$('.Rate_and_Premium').click(function(){
+ $('a[href="#RateandPremium"]' ).trigger( "click" );
+});
+
+
 /**** Yes/No Toggle button code *********/
 
-$('.btn-toggle').click(function() {
-    $(this).find('.btn').toggleClass('active');  
-    
-    if ($(this).find('.btn-primary').size()>0) {
-    	$(this).find('.btn').toggleClass('btn-primary');
-    }
-    if ($(this).find('.btn-danger').size()>0) {
-    	$(this).find('.btn').toggleClass('btn-danger');
-    }
-    if ($(this).find('.btn-success').size()>0) {
-    	$(this).find('.btn').toggleClass('btn-success');
-    }
-    if ($(this).find('.btn-info').size()>0) {
-    	$(this).find('.btn').toggleClass('btn-info');
-    }
-    
-    $(this).find('.btn').toggleClass('btn-default');
-       
+
+$('.btn-toggle button').click(function() {
+	 $(this).siblings("button").removeClass('active btn-primary').addClass(' btn-default');
+	 $(this).removeClass(' btn-default').addClass('active btn-primary');
 });
 
-$('form').submit(function(){
-	//alert($(this["options"]).val());
-    return false;
-});
 
 
 

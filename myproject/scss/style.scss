@@ -21,7 +21,7 @@
         margin-top: 0px;
     }
     .form-control {
-        background: url(../images/trans-bg-white-dark.png);
+        background: url(../../images/trans-bg-white-dark.png);
         padding: 22px 15px;
     }
     ::-webkit-input-placeholder {
@@ -45,7 +45,7 @@
 }
 
 .ISG-Tabs {
-    background: url(../images/trans-bg-white-dark.png);
+    background: url(../../images/trans-bg-white-dark.png);
     border-bottom: 0px solid #ddd;
     margin-bottom: 0px;
     @media (min-width: 768px) and (max-width: 979px) {
@@ -54,6 +54,8 @@
     @media (max-width: 767px) {
         display: inline-block;
     }
+	h3 { margin:0;padding:3px 0;font-size:$font-size-regular}
+	
     li {
         margin-bottom: 0px;
 		
@@ -72,6 +74,19 @@
     }
    
 }
+
+.TypeofReportingOptionals { display:none}
+.modal-footer { background:$accent-10}
+.searchbox1 { position:absolute; margin-top:20px;width: 230px; display:none; z-index:99;
+	.form1 {background:transparent;color:#fff;border:#fff solid 1px; padding:18px 10px;width:191px;}
+	.btn-default{padding:9px 15px 8px 15px;}
+	}
+	
+	.searchbox2 { position:absolute; margin-top:20px;width: 230px; display:none; z-index:99;
+	.form1 {background:transparent;color:#fff;border:#fff solid 1px; padding:18px 10px;width:191px;}
+	.btn-default{padding:9px 15px 8px 15px;}
+	}
+	
 
 .ISG-Tabs>li.active>a,
 .ISG-Tabs>li.active>a:focus,
@@ -92,23 +107,42 @@
 .tab-nav {
     padding-left: 0;
     padding-right: 0;
-    margin-top: 30px;
+    margin-top: 60px;
 }
-.rp-sidebar { display:none;
 
+#RiskInformation {
+	.form-control { margin-bottom:0px !important;}
+	
+	.table { margin-bottom:0;}
+	}
+
+.rp-sidebar { display:none;
+.btn-success   {@include border-radius(10px)}
+ .btn-primary {@include border-radius(0px !important);}
+
+.btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open>.dropdown-toggle.btn-success {
+    color: #fff;
+    background-color:$accent-8;
+    border-color:$accent-8;
+}
+
+
+.btn-toggle { margin-top:10px;}
+
+.panel-success {display:none;}
 .form-group {
     margin-bottom: 10px;
 }
 .btn-primary {
     color: #fff;
     background-color:$color-primary;
-    border-color:$color-primary;@include border-radius(0 !important);
+    border-color:$color-primary;@include border-radius(0);
 }
 .panel-body {
     padding: 10px 15px 15px 15px;
 }
 .form-control {
-    /*background: url(../images/trans-bg-white-dark.png);*/ background:none;
+    /*background: url(../../images/trans-bg-white-dark.png);*/ background:none;
     padding: 15px 15px;margin-bottom:5px;
 }
 	.panel {
@@ -124,16 +158,18 @@
   }
 .rp-content { margin:0; padding:0;}
 .tabContainer {
-    background: url(../images/trans-bg-white.png);
+    background: url(../../images/trans-bg-white.png);
     padding-left: 0;
     padding-right: 0;
     margin-top: -7px;
-	.btn-default {@include border-radius(10px); background:url(../images/input-bg.png); border:$accent-4 solid 1px;}
+	.btn-default {@include border-radius(10px); background:url(../../images/input-bg.png); border:$accent-4 solid 1px;}
 	.btn-primary {@include border-radius(10px);}
 	.btn-info {color: #fff;background-color:$color-primary;border-color: $color-primary; margin-bottom:10px;
 	
 	&:hover {background:$accent-8;border:$accent-8  solid 1px;}
+	
 	}
+	.activebtn{background:$accent-8;border:$accent-8  solid 1px;}
 	#RateandPremium {
 		.col-sm-3, .col-sm-6, .col-md-4, .col-lg-3 {padding-right: 5px;padding-left: 5px;}
 		}
@@ -148,14 +184,14 @@
 
 .modal-content {background-color:transparent;}	
 	
-		.modal-header {background: url(../images/trans-bg-white-dark.png);
+		.modal-header {background: url(../../images/trans-bg-white-dark.png);
 			min-height: 16.43px;
 			padding: 15px;
 			border-bottom: 0px solid #7B0D0D;
 			
 		}
 		
-		.modal-body {background: url(../images/trans-bg-white.png);}
+		.modal-body {background: url(../../images/trans-bg-white.png);}
 		
 	}
 

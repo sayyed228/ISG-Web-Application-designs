@@ -1,13 +1,20 @@
 body {
-    background: url(../images/bg.jpg) no-repeat center center fixed;
+    background: url(../../images/bg.jpg) no-repeat center center fixed;
     @include background-size(cover);
     width: 100%;
     height: 100%
 }
+.pad-top15 {padding-top:15px}
+.pad-top20 {padding-top:20px}
 
+.margin-top10 {margin-top:10px !important}
+.margin-top15 {margin-top:15px !important}
+.margin-top20 {margin-top:20px !important}
 .modal-backdrop.in {
     opacity: 0.9
 }
+
+.zero { margin:0; padding:0;}
 
 .pointer { cursor:pointer;}
  .selectOption{
@@ -33,7 +40,7 @@ body {
 header {
     .top {
         color: $accent-1;
-        background: url(../images/trans-bg.png);
+        background: url(../../images/trans-bg.png);
         padding: 20px 10px 10px 10px;
         a {
             color: $accent-1
@@ -42,7 +49,7 @@ header {
             float: right;
         }
         .dropdown-menu {
-            background: url(../images/trans-bg-white-dark.png);
+            background: url(../../images/trans-bg-white-dark.png);
             border: 1px solid $accent-4;
             padding: 0;
             @include border-radius(0);
@@ -53,7 +60,7 @@ header {
                     color: $accent-4;
                     padding: 10px 10px;
                     &:hover {
-                        background: url(../images/trans-bg-white.png);
+                        background: url(../../images/trans-bg-white.png);
                         color: $accent-4
                     }
                 }
